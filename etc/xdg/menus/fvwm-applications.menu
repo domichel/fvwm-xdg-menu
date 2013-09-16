@@ -1,0 +1,354 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+    <Name>FVWM</Name>
+
+    <!-- Search default locations -->
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+    <!-- Merge third-party submenus -->
+    <DefaultMergeDirs/>
+
+    <Include>
+        <Category>FVWM-Toplevel</Category>
+    </Include>
+
+    <!-- Doesn't change anything
+    <Layout>
+	<Merge type="all"/>
+        <Separator/>
+        <Menuname>Desktop Menu</Menuname>
+        <Separator/>
+    </Layout-->
+
+    <Menu>
+        <Name>Settings</Name>
+        <Directory>fvwm-settings.directory</Directory>
+        <Include>
+            <Category>Settings</Category>
+        </Include>
+	<Exclude>
+	    <Category>DesktopSettings</Category>
+	    <Category>HardwareSettings</Category>
+	    <Category>Printing</Category>
+	    <Category>PackageManager</Category>
+	    <Category>Security</Category>
+	    <Category>Accessibility</Category>
+	    <Category>Screensaver</Category>
+	</Exclude>
+	<Menu>
+	    <Name>Desktop Settings</Name>
+	    <Directory>fvwm-desktopsettings.directory</Directory>
+    	    <Include>
+    	        <Category>DesktopSettings</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Hardware Settings</Name>
+	    <Directory>fvwm-hardwaresettings.directory</Directory>
+    	    <Include>
+    	        <Category>HardwareSettings</Category>
+    	    </Include>
+	    <Exclude>
+		<Category>Printing</Category>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Printers Management</Name>
+	    <Directory>fvwm-printing.directory</Directory>
+    	    <Include>
+    	        <Category>Printing</Category>
+    	    </Include>
+	    <!--Exclude>
+		<Category>HardwareSettings</Category>
+	    </Excluse-->
+	</Menu>
+	<Menu>
+	    <Name>Packages Management</Name>
+	    <Directory>fvwm-packagemanager.directory</Directory>
+    	    <Include>
+    	        <Category>PackageManager</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Security</Name>
+	    <Directory>fvwm-security.directory</Directory>
+    	    <Include>
+    	        <Category>Security</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Accessibility</Name>
+	    <Directory>fvwm-accessibility.directory</Directory>
+    	    <Include>
+    	        <Category>Accessibility</Category>
+    	    </Include>
+	</Menu>
+    
+        <Menu>
+            <Name>Screensavers</Name>
+            <Directory>fvwm-screensavers.directory</Directory>
+            <Include>
+                <Category>Screensaver</Category>
+            </Include>
+        </Menu>
+    </Menu>
+
+    <Menu>
+        <Name>Accessories</Name>
+        <Directory>fvwm-accessories.directory</Directory>
+        <Include>
+            <Or>
+                <Category>Accessibility</Category>
+                <Category>Core</Category>
+                <Category>Legacy</Category>
+                <Category>Utility</Category>
+            </Or>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>exo-file-manager.desktop</Filename>
+                <Filename>exo-terminal-emulator.desktop</Filename>
+                <Filename>xfce4-about.desktop</Filename>
+                <Filename>xfce4-run.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
+
+    <Menu>
+        <Name>Development</Name>
+        <Directory>fvwm-development.directory</Directory>
+        <Include>
+            <Category>Development</Category>
+        </Include>
+	<Exclude>
+	    <Category>Building</Category>
+	    <Category>Debugger</Category>
+	    <Category>IDE</Category>
+	    <Category>GUIDesigner</Category>
+	    <Category>Profiling</Category>
+	    <Category>RevisionControl</Category>
+	    <Category>Translation</Category>
+	    <Category>Database</Category>
+	    <Category>ProjectManagement</Category>
+	    <Category>WebDevelopment</Category>
+	</Exclude>
+	<Menu>
+	    <Name>Building</Name>
+	    <Directory>fvwm-building.directory</Directory>
+    	    <Include>
+    	        <Category>Building</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Debugging</Name>
+	    <Directory>fvwm-debugger.directory</Directory>
+    	    <Include>
+    	        <Category>Debugger</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>IDE</Name>
+	    <Directory>fvwm-ide.directory</Directory>
+    	    <Include>
+    	        <Category>IDE</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>GUI Designer</Name>
+	    <Directory>fvwm-guidesigner.directory</Directory>
+    	    <Include>
+    	        <Category>GUIDesigner</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Profiling</Name>
+	    <Directory>fvwm-profiling.directory</Directory>
+    	    <Include>
+    	        <Category>Profiling</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Revision Control</Name>
+	    <Directory>fvwm-revisionc.directory</Directory>
+    	    <Include>
+    	        <Category>RevisionControl</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Translation</Name>
+	    <Directory>fvwm-translation.directory</Directory>
+    	    <Include>
+    	        <Category>Translation</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Database</Name>
+	    <Directory>fvwm-databse.directory</Directory>
+    	    <Include>
+    	        <Category>Database</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Project Management</Name>
+	    <Directory>fvwm-projectm.directory</Directory>
+    	    <Include>
+    	        <Category>ProjectManagement</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Web Development</Name>
+	    <Directory>fvwm-webdev.directory</Directory>
+    	    <Include>
+    	        <Category>WebDevelopment</Category>
+    	    </Include>
+	</Menu>
+    </Menu>
+
+    <Menu>
+        <Name>Education</Name>
+        <Directory>xfce-education.directory</Directory>
+        <Include>
+            <Category>Education</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Games</Name>
+        <Directory>xfce-games.directory</Directory>
+        <Include>
+            <Category>Game</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Graphics</Name>
+        <Directory>xfce-graphics.directory</Directory>
+        <Include>
+            <Category>Graphics</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Multimedia</Name>
+        <!-- Directory>xfce-multimedia.directory</Directory -->
+	<Menu>
+	    <Name>Audio</Name>
+    	    <Include>
+        	<Category>Audio</Category>
+    	    </Include>
+	    <Exclude>
+		<Category>HamRadio</Category>
+		<Category>Midi</Category>
+		<Category>Mixer</Category>
+		<Category>Sequencer</Category>
+		<Category>AudioVideoEditing</Category>
+		<Category>Player</Category>
+		<Category>Recorder</Category>
+	    </Exclude>
+	    <Menu>
+		<Name>HamRadio</Name>
+    		<Include>
+    		    <Category>HamRadio</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Midi</Name>
+    		<Include>
+    		    <Category>Midi</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Mixer</Name>
+    		<Include>
+    		    <Category>Mixer</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Sequencer</Name>
+    		<Include>
+    		    <Category>Sequencer</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>AudioVideoEditing</Name>
+    		<Include>
+    		    <Category>AudioVideoEditing</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Player</Name>
+    		<Include>
+    		    <Category>Player</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Recorder</Name>
+    		<Include>
+    		    <Category>Recorder</Category>
+    		</Include>
+	    </Menu>
+	</Menu>
+	<Menu>
+	    <Name>Video</Name>
+	    <Include>
+                <Category>Video</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>AudioVideo></Name>
+	    <Include>
+                <Category>AudioVideo</Category>
+	    </Include>
+	</Menu>
+    </Menu>
+
+    <Menu>
+        <Name>Network</Name>
+        <Directory>xfce-network.directory</Directory>
+        <Include>
+            <Category>Network</Category>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>exo-mail-reader.desktop</Filename>
+                <Filename>exo-web-browser.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
+
+    <Menu>
+        <Name>Office</Name>
+        <Directory>xfce-office.directory</Directory>
+        <Include>
+            <Category>Office</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>System</Name>
+        <Directory>xfce-system.directory</Directory>
+        <Include>
+            <Or>
+                <Category>Emulator</Category>
+                <Category>System</Category>
+            </Or>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>xfce4-session-logout.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
+
+    <Menu>
+        <Name>Other</Name>
+        <Directory>xfce-other.directory</Directory>
+        <OnlyUnallocated/>
+        <Include>
+            <All/>
+        </Include>
+    </Menu>
+
+</Menu>
