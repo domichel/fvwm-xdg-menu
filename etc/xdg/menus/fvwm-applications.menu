@@ -344,7 +344,7 @@
 
     <Menu>
         <Name>Other</Name>
-        <Directory>xfce-other.directory</Directory>
+        <Directory>fvwm-other.directory</Directory>
         <OnlyUnallocated/>
         <Include>
             <All/>
