@@ -320,7 +320,7 @@
 
     <Menu>
         <Name>Office</Name>
-        <Directory>xfce-office.directory</Directory>
+        <Directory>fvwm-office.directory</Directory>
         <Include>
             <Category>Office</Category>
         </Include>
