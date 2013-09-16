@@ -328,7 +328,7 @@
 
     <Menu>
         <Name>System</Name>
-        <Directory>xfce-system.directory</Directory>
+        <Directory>fvwm-system.directory</Directory>
         <Include>
             <Or>
                 <Category>Emulator</Category>
