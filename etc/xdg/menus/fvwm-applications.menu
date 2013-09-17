@@ -224,7 +224,7 @@
 
     <Menu>
         <Name>Graphics</Name>
-        <Directory>xfce-graphics.directory</Directory>
+        <Directory>fvwm-graphics.directory</Directory>
         <Include>
             <Category>Graphics</Category>
         </Include>
