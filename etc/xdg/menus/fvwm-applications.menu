@@ -232,7 +232,7 @@
 
     <Menu>
         <Name>Multimedia</Name>
-        <!-- Directory>xfce-multimedia.directory</Directory -->
+        <Directory>fvwm-multimedia.directory</Directory>
 	<Menu>
 	    <Name>Audio</Name>
     	    <Include>
@@ -306,7 +306,7 @@
 
     <Menu>
         <Name>Network</Name>
-        <Directory>xfce-network.directory</Directory>
+        <Directory>fvwm-network.directory</Directory>
         <Include>
             <Category>Network</Category>
         </Include>
