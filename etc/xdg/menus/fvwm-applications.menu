@@ -208,7 +208,7 @@
 
     <Menu>
         <Name>Education</Name>
-        <Directory>xfce-education.directory</Directory>
+        <Directory>fvwm-education.directory</Directory>
         <Include>
             <Category>Education</Category>
         </Include>
