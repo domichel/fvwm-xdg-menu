@@ -216,7 +216,7 @@
 
     <Menu>
         <Name>Games</Name>
-        <Directory>xfce-games.directory</Directory>
+        <Directory>fvwm-games.directory</Directory>
         <Include>
             <Category>Game</Category>
         </Include>
