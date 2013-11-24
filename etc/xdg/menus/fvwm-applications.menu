@@ -4,12 +4,11 @@
 <Menu>
     <Name>FVWM</Name>
 
-    <!-- Desktop file can have more than one main category and the
-	 same additional category can be find in many main category.
-	 In consequence, we will use <and> statement and let the
-	 desktop file place its application. That imply, some apps
-	 will be find in more than one place, other in only one.
-	 This is so upstream whant it. -->
+    <!-- Desktop file can have more than one main category, and the same additional
+	 category can be find in many main categories. In consequence, we will use
+	 <Exclude> <Not> statements to let the desktop file place its application.
+	 That imply, some apps will be find in more than one place, other in only
+	 one. This is so upstream whant it. -->
 
     <!-- Search default locations -->
     <DefaultAppDirs/>
