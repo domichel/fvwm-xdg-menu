@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-development
+Name=Translation
+Name[en_GB]=Translation
+Name[fr]=Traduction
+Comment=Translation tool
+Comment[en_GB]=Translation tool
+Comment[fr]=Outil de tranduction

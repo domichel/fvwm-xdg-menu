@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-development
+Name=Revision Control
+Name[en_GB]=Revision Control
+Name[fr]=Contrôle de révision
+Comment=Applications like cvs or subersion
+Comment[en_GB]=Applications like cvs or subersion
+Comment[fr]=Applications comme cvs ou subersion

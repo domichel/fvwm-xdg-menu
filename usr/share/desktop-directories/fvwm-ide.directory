@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-development
+Name=IDE
+Name[en_GB]=IDE
+Name[fr]=IDE
+Comment=IDE application
+Comment[en_GB]=IDE application
+Comment[fr]=Environnement de développement intégré
