@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-development
+Name=Database
+Name[en_GB]=Database
+Name[fr]=Base de donnée
+Comment=Application to manage a database
+Comment[en_GB]=Application to manage a database
+Comment[fr]=Application pour gérer une base de donnée

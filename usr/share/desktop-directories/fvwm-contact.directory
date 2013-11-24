@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-office
+Name=Contact Management
+Name[en_GB]=Contact Management
+Name[fr]=Gestion des contacts
+Comment=I.g. an address book
+Comment[en_GB]=I.g. an address book
+Comment[fr]=Par exemple un carnet d'adresses
