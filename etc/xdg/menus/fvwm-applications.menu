@@ -4,6 +4,13 @@
 <Menu>
     <Name>FVWM</Name>
 
+    <!-- Desktop file can have more than one main category and the
+	 same additional category can be find in many main category.
+	 In consequence, we will use <and> statement and let the
+	 desktop file place its application. That imply, some apps
+	 will be find in more than one place, other in only one.
+	 This is so upstream whant it. -->
+
     <!-- Search default locations -->
     <DefaultAppDirs/>
     <DefaultDirectoryDirs/>
@@ -22,6 +29,7 @@
         <Separator/>
     </Layout-->
 
+    <!-- Settins menu -->
     <Menu>
         <Name>Settings</Name>
         <Directory>fvwm-settings.directory</Directory>
@@ -58,11 +66,13 @@
 	    <Name>Printers Management</Name>
 	    <Directory>fvwm-printing.directory</Directory>
     	    <Include>
-    	        <Category>Printing</Category>
+    	    	<Category>Printing</Category>
     	    </Include>
-	    <!--Exclude>
-		<Category>HardwareSettings</Category>
-	    </Excluse-->
+	    <Exclude>
+		<Not>
+		    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
 	</Menu>
 	<Menu>
 	    <Name>Packages Management</Name>
@@ -95,6 +105,7 @@
         </Menu>
     </Menu>
 
+    <!-- Accesories menu -->
     <Menu>
         <Name>Accessories</Name>
         <Directory>fvwm-accessories.directory</Directory>
@@ -113,9 +124,33 @@
                 <Filename>xfce4-about.desktop</Filename>
                 <Filename>xfce4-run.desktop</Filename>
             </Or>
+	    <Category>TextTools</Category>
         </Exclude>
+	<Menu>
+	    <Name>Text Tools</Name>
+	    <Directory>fvwm-texttools.directory</Directory>
+    	    <Include>
+    	        <Category>TextTools</Category>
+    	    </Include>
+    	    <Exclude>
+        	<Category>Dictionary</Category>
+            </Exclude>
+    	    <Menu>
+		<Name>Dictionary</Name>
+		<Directory>fvwm-dictionary.directory</Directory>
+    		<Include>
+    	    		<Category>Dictionary</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+	        	<Category>TextTools</Category>
+		    </Not>
+		</Exclude>
+	    </Menu>
+	</Menu>
     </Menu>
 
+    <!-- Development menu -->
     <Menu>
         <Name>Development</Name>
         <Directory>fvwm-development.directory</Directory>
@@ -171,7 +206,7 @@
 	</Menu>
 	<Menu>
 	    <Name>Revision Control</Name>
-	    <Directory>fvwm-revisionc.directory</Directory>
+	    <Directory>fvwm-revisionctrl.directory</Directory>
     	    <Include>
     	        <Category>RevisionControl</Category>
     	    </Include>
@@ -185,10 +220,15 @@
 	</Menu>
 	<Menu>
 	    <Name>Database</Name>
-	    <Directory>fvwm-databse.directory</Directory>
+	    <Directory>fvwm-database.directory</Directory>
     	    <Include>
-    	        <Category>Database</Category>
+    	    	    <Category>Database</Category>
     	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
 	</Menu>
 	<Menu>
 	    <Name>Project Management</Name>
@@ -206,6 +246,7 @@
 	</Menu>
     </Menu>
 
+    <!-- Education menu -->
     <Menu>
         <Name>Education</Name>
         <Directory>fvwm-education.directory</Directory>
@@ -222,6 +263,7 @@
         </Include>
     </Menu>
 
+    <!-- Graphics menu -->
     <Menu>
         <Name>Graphics</Name>
         <Directory>fvwm-graphics.directory</Directory>
@@ -230,10 +272,12 @@
         </Include>
     </Menu>
 
+    <!-- Multimedia menu -->
     <Menu>
         <Name>Multimedia</Name>
         <Directory>fvwm-multimedia.directory</Directory>
 	<Menu>
+	    <!-- Audio menu -->
 	    <Name>Audio</Name>
     	    <Include>
         	<Category>Audio</Category>
@@ -291,22 +335,40 @@
 	    </Menu>
 	</Menu>
 	<Menu>
+	    <!-- Video menu -->
 	    <Name>Video</Name>
 	    <Include>
                 <Category>Video</Category>
     	    </Include>
 	</Menu>
 	<Menu>
+	    <!-- AudioVideo menu -->
 	    <Name>AudioVideo></Name>
 	    <Include>
                 <Category>AudioVideo</Category>
 	    </Include>
+	    <Exclude>
+		    <Category>Database</Category>
+	    </Exclude>
+	    <Menu>
+		<Name>Database</Name>
+		<Directory>fvwm-database.directory</Directory>
+    		<Include>
+    			<Category>Database</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>AudioVideo</Category>
+		    </Not>
+		</Exclude>
+	    </Menu>
 	</Menu>
     </Menu>
 
+    <!-- Network menu -->
     <Menu>
-        <Name>Network</Name>
-        <Directory>fvwm-network.directory</Directory>
+        <Name>Internet</Name>
+        <Directory>fvwm-internet.directory</Directory>
         <Include>
             <Category>Network</Category>
         </Include>
@@ -315,17 +377,92 @@
                 <Filename>exo-mail-reader.desktop</Filename>
                 <Filename>exo-web-browser.desktop</Filename>
             </Or>
+	    <Category>Email</Category>
         </Exclude>
+    	<Menu>
+	    <Name>Email</Name>
+	    <Directory>fvwm-email.directory</Directory>
+    	    <Include>
+    	    	<Category>Email</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Network</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
     </Menu>
 
+    <!-- Office menu -->
     <Menu>
         <Name>Office</Name>
         <Directory>fvwm-office.directory</Directory>
         <Include>
             <Category>Office</Category>
         </Include>
+	    <Exclude>
+		<Category>Calendar</Category>
+		<Category>Database</Category>
+		<Category>ContactManagement</Category>
+		<Category>Dictionary</Category>
+		<Category>Chart</Category>
+		<Category>Email</Category>
+	    </Exclude>
+	    <Menu>
+		<Name>Calendar</Name>
+		<Directory>fvwm-calendar.directory</Directory>
+    		<Include>
+    		    <Category>Calendar</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Database</Name>
+		<Directory>fvwm-database.directory</Directory>
+    		<Include>
+    		    <Category>Database</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Contact Management</Name>
+		<Directory>fvwm-contact.directory</Directory>
+    		<Include>
+    		    <Category>ContactManagement</Category>
+    		</Include>
+	    </Menu>
+    	    <Menu>
+		<Name>Dictionary</Name>
+		<Directory>fvwm-dictionary.directory</Directory>
+    		<Include>
+    	    		<Category>Dictionary</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Office</Category>
+		    </Not>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Chart</Name>
+		<Directory>fvwm-chart.directory</Directory>
+    		<Include>
+    		    <Category>Chart</Category>
+    		</Include>
+	    </Menu>
+    	    <Menu>
+		<Name>Email</Name>
+		<Directory>fvwm-email.directory</Directory>
+    		<Include>
+    	    		<Category>Email</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Office</Category>
+		    </Not>
+		</Exclude>
+	    </Menu>
     </Menu>
 
+    <!-- System menu -->
     <Menu>
         <Name>System</Name>
         <Directory>fvwm-system.directory</Directory>
@@ -342,6 +479,7 @@
         </Exclude>
     </Menu>
 
+    <!-- Other menu / catch all -->
     <Menu>
         <Name>Other</Name>
         <Directory>fvwm-other.directory</Directory>
@@ -350,5 +488,4 @@
             <All/>
         </Include>
     </Menu>
-
 </Menu>
