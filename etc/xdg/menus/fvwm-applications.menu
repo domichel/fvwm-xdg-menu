@@ -235,6 +235,11 @@
     	    <Include>
     	        <Category>ProjectManagement</Category>
     	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
 	</Menu>
 	<Menu>
 	    <Name>Web Development</Name>
@@ -406,6 +411,13 @@
 		<Category>Dictionary</Category>
 		<Category>Chart</Category>
 		<Category>Email</Category>
+		<Category>Finance</Category>
+		<Category>FlowChart</Category>
+		<Category>PDA</Category>
+		<Category>ProjectManagement</Category>
+		<Category>Presentation</Category>
+		<Category>Spreadsheet</Category>
+		<Category>WordProcessor</Category>
 	    </Exclude>
 	    <Menu>
 		<Name>Calendar</Name>
@@ -420,6 +432,11 @@
     		<Include>
     		    <Category>Database</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Office</Category>
+		    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
 		<Name>Contact Management</Name>
@@ -458,6 +475,60 @@
         		<Category>Office</Category>
 		    </Not>
 		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Finance</Name>
+		<Directory>fvwm-finance.directory</Directory>
+    		<Include>
+    		    <Category>Finance</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Flowchart</Name>
+		<Directory>fvwm-flowchart.directory</Directory>
+    		<Include>
+    		    <Category>FlowChart</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>PDA</Name>
+		<Directory>fvwm-pda.directory</Directory>
+    		<Include>
+    		    <Category>PDA</Category>
+    		</Include>
+	    </Menu>
+    	    <Menu>
+		<Name>Project Management</Name>
+		<Directory>fvwm-projectmanagement.directory</Directory>
+    		<Include>
+    	    		<Category>ProjectManagement</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Office</Category>
+		    </Not>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Presentation</Name>
+		<Directory>fvwm-presentation.directory</Directory>
+    		<Include>
+    		    <Category>Presentation</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Spreadsheet</Name>
+		<Directory>fvwm-spreadsheet.directory</Directory>
+    		<Include>
+    		    <Category>Spreadsheet</Category>
+    		</Include>
+	    </Menu>
+	    <Menu>
+		<Name>Word Processor</Name>
+		<Directory>fvwm-word.directory</Directory>
+    		<Include>
+    		    <Category>WordProcessor</Category>
+    		</Include>
 	    </Menu>
     </Menu>
 

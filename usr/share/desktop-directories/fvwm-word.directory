@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-office
+Name=Word Processor
+Name[en_GB]=Word Procesor
+Name[fr]=Traitement de texte
+Comment=A word processor
+Comment[en_GB]=A word processor
+Comment[fr]=Un traitement de texte
