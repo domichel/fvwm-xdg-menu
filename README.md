@@ -23,7 +23,7 @@ DONE:
 TODO to reach the holly goal:
  - Add the remaining additional categories.
  - Find a way to deal with AudioVideo;Audio; and AudioVideo;Video; as
-    we don't want any single Audio and Viedo application to also
+    we don't want any single Audio and Video application to also
     appear in AudioVideo.
 
 You may have to symlink applications.menu to fvwm-applications.menu
