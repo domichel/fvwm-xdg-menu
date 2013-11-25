@@ -14,7 +14,7 @@ enough to make the menu to work fine.
 When done, a patch for inclusion into fvwm will be done.
 
 DONE:
- - The main squeleton of the menu.
+ - The main skeleton of the menu.
  - Some addtional categories are included with a mechanism to
     include them into the menu. If a desktop file contain 2
     main categories and 1 additional category, the program
