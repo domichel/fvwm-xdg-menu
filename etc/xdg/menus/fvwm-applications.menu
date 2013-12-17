@@ -1,6 +1,7 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
   "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
+<!-- Photography OK -->
 <Menu>
     <Name>FVWM</Name>
 
@@ -259,6 +260,8 @@
         </Include>
     </Menu>
 
+
+    <!-- Games menu -->
     <Menu>
         <Name>Games</Name>
         <Directory>fvwm-games.directory</Directory>
@@ -274,6 +277,116 @@
         <Include>
             <Category>Graphics</Category>
         </Include>
+	<Exclude>
+	    <Category>2DGraphics</Category>
+	    <Category>VectorGraphics</Category>
+	    <Category>RasterGraphics</Category>
+	    <Category>3DGraphics</Category>
+	    <Category>Scanning</Category>
+	    <Category>OCR</Category>
+	    <Category>Photography</Category>
+	</Exclude>
+	<Menu>
+	    <Name>Vector Graphics</Name>
+	    <Directory>fvwm-vectorgraphics.directory</Directory>
+    	    <Include>
+    		<Category>VectorGraphics</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>2DGraphics</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Raster Graphics</Name>
+	    <Directory>fvwm-rastergraphics.directory</Directory>
+    	    <Include>
+    		<Category>RasterGraphics</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>2DGraphics</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>2D Graphics</Name>
+	    <Directory>fvwm-2dgraphics.directory</Directory>
+    	    <Include>
+    		<Category>2DGraphics</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>VectorGraphics</Category>
+    		<Category>RasterGraphics</Category>
+    	    </Exclude>
+	    <Menu>
+		<Name>Vector Graphics</Name>
+		<Directory>fvwm-vectorgraphics.directory</Directory>
+    		<Include>
+    		    <Category>VectorGraphics</Category>
+    		</Include>
+    		<Exclude>
+    		    <Not>
+    			<Category>2DGraphics</Category>
+    		    </Not>
+    		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Raster Graphics</Name>
+		<Directory>fvwm-rastergraphics.directory</Directory>
+    		<Include>
+    		    <Category>RasterGraphics</Category>
+    		</Include>
+    		<Exclude>
+    		    <Not>
+    			<Category>2DGraphics</Category>
+    		    </Not>
+    		</Exclude>
+	    </Menu>
+	</Menu>
+	<Menu>
+	    <Name>3D Graphics</Name>
+	    <Directory>fvwm-3dgraphics.directory</Directory>
+    	    <Include>
+    		<Category>3DGraphics</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Scanning</Name>
+	    <Directory>fvwm-scanning.directory</Directory>
+    	    <Include>
+    		<Category>Scanning</Category>
+    	    </Include>
+	    <Menu>
+		<Name>OCR</Name>
+		<Directory>fvwm-ocr.directory</Directory>
+    		<Include>
+    		    <Category>OCR</Category>
+    		</Include>
+    		<Exclude>
+    		    <Not>
+    			<Category>Scanning</Category>
+    		    </Not>
+    		</Exclude>
+	    </Menu>
+	</Menu>
+	<Menu>
+	    <Name>OCR</Name>
+	    <Directory>fvwm-ocr.directory</Directory>
+    	    <Include>
+    		<Category>OCR</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Scanning</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Photography</Name>
+	    <Directory>fvwm-photography.directory</Directory>
+    	    <Include>
+    		<Category>Photography</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Office</Category>
+    	    </Exclude>
+	</Menu>
     </Menu>
 
     <!-- Multimedia menu -->
@@ -352,6 +465,8 @@
                 <Category>AudioVideo</Category>
 	    </Include>
 	    <Exclude>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
 		    <Category>Database</Category>
 	    </Exclude>
 	    <Menu>
@@ -404,132 +519,142 @@
         <Include>
             <Category>Office</Category>
         </Include>
+	<Exclude>
+	    <Category>Calendar</Category>
+	    <Category>Database</Category>
+	    <Category>ContactManagement</Category>
+	    <Category>Dictionary</Category>
+	    <Category>Chart</Category>
+	    <Category>Email</Category>
+	    <Category>Finance</Category>
+	    <Category>FlowChart</Category>
+	    <Category>PDA</Category>
+	    <Category>ProjectManagement</Category>
+	    <Category>Presentation</Category>
+	    <Category>Spreadsheet</Category>
+	    <Category>WordProcessor</Category>
+	</Exclude>
+	<Menu>
+	    <Name>Calendar</Name>
+	    <Directory>fvwm-calendar.directory</Directory>
+    	    <Include>
+    	        <Category>Calendar</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Database</Name>
+	    <Directory>fvwm-database.directory</Directory>
+    	    <Include>
+    		<Category>Database</Category>
+    	    </Include>
 	    <Exclude>
-		<Category>Calendar</Category>
-		<Category>Database</Category>
-		<Category>ContactManagement</Category>
-		<Category>Dictionary</Category>
-		<Category>Chart</Category>
-		<Category>Email</Category>
-		<Category>Finance</Category>
-		<Category>FlowChart</Category>
-		<Category>PDA</Category>
-		<Category>ProjectManagement</Category>
-		<Category>Presentation</Category>
-		<Category>Spreadsheet</Category>
-		<Category>WordProcessor</Category>
+		<Not>
+        	    <Category>Office</Category>
+		</Not>
 	    </Exclude>
-	    <Menu>
-		<Name>Calendar</Name>
-		<Directory>fvwm-calendar.directory</Directory>
-    		<Include>
-    		    <Category>Calendar</Category>
-    		</Include>
-	    </Menu>
-	    <Menu>
-		<Name>Database</Name>
-		<Directory>fvwm-database.directory</Directory>
-    		<Include>
-    		    <Category>Database</Category>
-    		</Include>
-		<Exclude>
-		    <Not>
-        		<Category>Office</Category>
-		    </Not>
-		</Exclude>
-	    </Menu>
-	    <Menu>
-		<Name>Contact Management</Name>
-		<Directory>fvwm-contact.directory</Directory>
-    		<Include>
-    		    <Category>ContactManagement</Category>
-    		</Include>
-	    </Menu>
-    	    <Menu>
-		<Name>Dictionary</Name>
-		<Directory>fvwm-dictionary.directory</Directory>
-    		<Include>
-    	    		<Category>Dictionary</Category>
-    		</Include>
-		<Exclude>
-		    <Not>
-        		<Category>Office</Category>
-		    </Not>
-		</Exclude>
-	    </Menu>
-	    <Menu>
-		<Name>Chart</Name>
-		<Directory>fvwm-chart.directory</Directory>
-    		<Include>
-    		    <Category>Chart</Category>
-    		</Include>
-	    </Menu>
-    	    <Menu>
-		<Name>Email</Name>
-		<Directory>fvwm-email.directory</Directory>
-    		<Include>
-    	    		<Category>Email</Category>
-    		</Include>
-		<Exclude>
-		    <Not>
-        		<Category>Office</Category>
-		    </Not>
-		</Exclude>
-	    </Menu>
-	    <Menu>
-		<Name>Finance</Name>
-		<Directory>fvwm-finance.directory</Directory>
-    		<Include>
-    		    <Category>Finance</Category>
-    		</Include>
-	    </Menu>
-	    <Menu>
-		<Name>Flowchart</Name>
-		<Directory>fvwm-flowchart.directory</Directory>
-    		<Include>
-    		    <Category>FlowChart</Category>
-    		</Include>
-	    </Menu>
-	    <Menu>
-		<Name>PDA</Name>
-		<Directory>fvwm-pda.directory</Directory>
-    		<Include>
-    		    <Category>PDA</Category>
-    		</Include>
-	    </Menu>
-    	    <Menu>
-		<Name>Project Management</Name>
-		<Directory>fvwm-projectmanagement.directory</Directory>
-    		<Include>
-    	    		<Category>ProjectManagement</Category>
-    		</Include>
-		<Exclude>
-		    <Not>
-        		<Category>Office</Category>
-		    </Not>
-		</Exclude>
-	    </Menu>
-	    <Menu>
-		<Name>Presentation</Name>
-		<Directory>fvwm-presentation.directory</Directory>
-    		<Include>
-    		    <Category>Presentation</Category>
-    		</Include>
-	    </Menu>
-	    <Menu>
-		<Name>Spreadsheet</Name>
-		<Directory>fvwm-spreadsheet.directory</Directory>
-    		<Include>
-    		    <Category>Spreadsheet</Category>
-    		</Include>
-	    </Menu>
-	    <Menu>
-		<Name>Word Processor</Name>
-		<Directory>fvwm-word.directory</Directory>
-    		<Include>
-    		    <Category>WordProcessor</Category>
-    		</Include>
-	    </Menu>
+	</Menu>
+	<Menu>
+	    <Name>Contact Management</Name>
+	    <Directory>fvwm-contact.directory</Directory>
+    	    <Include>
+    	        <Category>ContactManagement</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Dictionary</Name>
+	    <Directory>fvwm-dictionary.directory</Directory>
+    	    <Include>
+    	    	<Category>Dictionary</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Chart</Name>
+	    <Directory>fvwm-chart.directory</Directory>
+    	    <Include>
+    		<Category>Chart</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Email</Name>
+	    <Directory>fvwm-email.directory</Directory>
+    	    <Include>
+    	    	<Category>Email</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Finance</Name>
+	    <Directory>fvwm-finance.directory</Directory>
+    	    <Include>
+    		<Category>Finance</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Flowchart</Name>
+	    <Directory>fvwm-flowchart.directory</Directory>
+    	    <Include>
+    	        <Category>FlowChart</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>PDA</Name>
+	    <Directory>fvwm-pda.directory</Directory>
+    	    <Include>
+    		<Category>PDA</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Project Management</Name>
+	    <Directory>fvwm-projectmanagement.directory</Directory>
+    	    <Include>
+    	    	<Category>ProjectManagement</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Presentation</Name>
+	    <Directory>fvwm-presentation.directory</Directory>
+    	    <Include>
+    		<Category>Presentation</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Spreadsheet</Name>
+	    <Directory>fvwm-spreadsheet.directory</Directory>
+    	    <Include>
+    		<Category>Spreadsheet</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Word Processor</Name>
+	    <Directory>fvwm-word.directory</Directory>
+    	    <Include>
+    		<Category>WordProcessor</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Photography</Name>
+	    <Directory>fvwm-photography.directory</Directory>
+    	    <Include>
+    		<Category>Photography</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Graphics</Category>
+    	    </Exclude>
+	</Menu>
     </Menu>
 
     <!-- System menu -->

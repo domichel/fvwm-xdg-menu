@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-graphics
+Name=OCR
+Name[en_GB]=OCR
+Name[fr]=Reconnaissance optique de caractères
+Comment=Optical character recognition applications
+Comment[en_GB]=Optical character recognition applications
+Comment[fr]=Applications de reconnaissance optique de caractères
