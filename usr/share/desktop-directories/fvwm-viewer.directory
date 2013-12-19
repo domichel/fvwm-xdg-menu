@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-graphics
+Name=Viewer
+Name[en_GB]=Viewer
+Name[fr]=Visionneuse
+Comment=Tools to view i.e. a graphic or pdf file
+Comment[en_GB]=Tools to view i.e. a graphic or pdf file
+Comment[fr]=Outils pour voir par exemple un fichier graphique ou pdf

@@ -2,9 +2,9 @@
 Version=1.0
 Type=Directory
 Icon=applications-graphics
-Name=Vector Graphics
-Name[en_GB]=Vector Graphics
-Name[fr]=Graphisme vectoriel
-Comment=Applications for viewing, creating, or processing vector graphics
-Comment[en_GB]=Applications for viewing, creating, or processing vector graphics
-Comment[fr]=Applications pour lire, créer ou traiter des graphiques vectoriels
+Name=Raster Graphics
+Name[en_GB]=Raster Graphics
+Name[fr]=Graphisme matriciel
+Comment=Applications for viewing, creating, or processing raster (bitmap) graphics
+Comment[en_GB]=Applications for viewing, creating, or processing raster (bitmap) graphics
+Comment[fr]=Applications pour lire, créer ou traiter des graphiques matriciels

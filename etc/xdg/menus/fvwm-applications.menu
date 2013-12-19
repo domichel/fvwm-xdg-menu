@@ -1,7 +1,7 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
   "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
-<!-- Photography OK -->
+<!-- PackageManager OK -->
 <Menu>
     <Name>FVWM</Name>
 
@@ -61,6 +61,18 @@
 	    <Exclude>
 		<Category>Printing</Category>
 	    </Exclude>
+	    <Menu>
+		<Name>Printers Management</Name>
+		<Directory>fvwm-printing.directory</Directory>
+    		<Include>
+    	    	    <Category>Printing</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+			<Category>HardwareSettings</Category>
+		    </Not>
+		</Exclude>
+	    </Menu>
 	</Menu>
 	<Menu>
 	    <Name>Printers Management</Name>
@@ -69,12 +81,12 @@
     	    	<Category>Printing</Category>
     	    </Include>
 	    <Exclude>
+		<Category>HardwareSettings</Category>
 		<Not>
 		    <Category>Settings</Category>
 		</Not>
 	    </Exclude>
-	</Menu>
-	<Menu>
+	</Menu>	<Menu>
 	    <Name>Packages Management</Name>
 	    <Directory>fvwm-packagemanager.directory</Directory>
     	    <Include>
@@ -95,7 +107,6 @@
     	        <Category>Accessibility</Category>
     	    </Include>
 	</Menu>
-    
         <Menu>
             <Name>Screensavers</Name>
             <Directory>fvwm-screensavers.directory</Directory>
@@ -268,6 +279,112 @@
         <Include>
             <Category>Game</Category>
         </Include>
+        <Exclude>
+            <Category>ActionGame</Category>
+            <Category>AdventureGame</Category>
+            <Category>ArcadeGame</Category>
+            <Category>BoardGame</Category>
+            <Category>BlocksGame</Category>
+            <Category>CardGame</Category>
+            <Category>KidsGame</Category>
+            <Category>LogicGame</Category>
+            <Category>RolePlaying</Category>
+            <Category>Shooter</Category>
+            <Category>Simulation</Category>
+            <Category>SportsGame</Category>
+            <Category>StrategyGame</Category>
+        </Exclude>
+	<Menu>
+	    <Name>Action Games</Name>
+	    <Directory>fvwm-actiongame.directory</Directory>
+    	    <Include>
+    	        <Category>ActionGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Adventure Games</Name>
+	    <Directory>fvwm-adventuregame.directory</Directory>
+    	    <Include>
+    	        <Category>AdventureGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Arcade Games</Name>
+	    <Directory>fvwm-arcadegame.directory</Directory>
+    	    <Include>
+    	        <Category>ArcadeGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Board Games</Name>
+	    <Directory>fvwm-boardgame.directory</Directory>
+    	    <Include>
+    	        <Category>BoardGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Blocks Games</Name>
+	    <Directory>fvwm-blocksgame.directory</Directory>
+    	    <Include>
+    	        <Category>BlocksGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Card Games</Name>
+	    <Directory>fvwm-cardgame.directory</Directory>
+    	    <Include>
+    	        <Category>CardGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Kids Games</Name>
+	    <Directory>fvwm-kidsgame.directory</Directory>
+    	    <Include>
+    	        <Category>KidsGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Logic Games</Name>
+	    <Directory>fvwm-logicgame.directory</Directory>
+    	    <Include>
+    	        <Category>LogicGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Role Playing</Name>
+	    <Directory>fvwm-roleplaying.directory</Directory>
+    	    <Include>
+    	        <Category>RolePlaying</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Shooters</Name>
+	    <Directory>fvwm-shooter.directory</Directory>
+    	    <Include>
+    	        <Category>Shooter</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Simulation</Name>
+	    <Directory>fvwm-simulation.directory</Directory>
+    	    <Include>
+    	        <Category>Simulation</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Sport Games</Name>
+	    <Directory>fvwm-sportsgame.directory</Directory>
+    	    <Include>
+    	        <Category>SportsGame</Category>
+    	    </Include>
+	</Menu>
+	<Menu>
+	    <Name>Strategy Games</Name>
+	    <Directory>fvwm-strategygame.directory</Directory>
+    	    <Include>
+    	        <Category>StrategyGame</Category>
+    	    </Include>
+	</Menu>
     </Menu>
 
     <!-- Graphics menu -->
@@ -285,6 +402,8 @@
 	    <Category>Scanning</Category>
 	    <Category>OCR</Category>
 	    <Category>Photography</Category>
+	    <Category>Publishing</Category>
+	    <Category>Viewer</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Vector Graphics</Name>
@@ -382,6 +501,26 @@
 	    <Directory>fvwm-photography.directory</Directory>
     	    <Include>
     		<Category>Photography</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Office</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Publishing</Name>
+	    <Directory>fvwm-publishing.directory</Directory>
+    	    <Include>
+    		<Category>Publishing</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Office</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Viewer</Name>
+	    <Directory>fvwm-viewer.directory</Directory>
+    	    <Include>
+    		<Category>Viewer</Category>
     	    </Include>
     	    <Exclude>
     		<Category>Office</Category>
@@ -533,6 +672,9 @@
 	    <Category>Presentation</Category>
 	    <Category>Spreadsheet</Category>
 	    <Category>WordProcessor</Category>
+	    <Category>Photography</Category>
+	    <Category>Publishing</Category>
+	    <Category>Viewer</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Calendar</Name>
@@ -650,6 +792,26 @@
 	    <Directory>fvwm-photography.directory</Directory>
     	    <Include>
     		<Category>Photography</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Graphics</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Publishing</Name>
+	    <Directory>fvwm-publishing.directory</Directory>
+    	    <Include>
+    		<Category>Publishing</Category>
+    	    </Include>
+    	    <Exclude>
+    		<Category>Graphics</Category>
+    	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Viewer</Name>
+	    <Directory>fvwm-viewer.directory</Directory>
+    	    <Include>
+    		<Category>viewer</Category>
     	    </Include>
     	    <Exclude>
     		<Category>Graphics</Category>
