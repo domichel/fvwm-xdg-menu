@@ -22,13 +22,10 @@ DONE:
 
 TODO to reach the holly goal:
  - Add the remaining additional categories.
- - Find a way to deal with AudioVideo;Audio; and AudioVideo;Video; as
-    we don't want any single Audio and Video application to also
-    appear in AudioVideo.
 
-Don't make a symlink applications.menu to fvwm-applications.menu
+Don't make a symlink from fvwm-applications.menu to applications.menu
 in /etc/xdg/menus. This doesn't arm fvwm, but can make silly bugs like
-kbuildsycoca4 that run forever at 100 % cpu.
+kbuildsycoca4 running forever at 100 % cpu.
 
 
 This work is copyrighted under the GPL v.2, look at the LICENSE file for details.
