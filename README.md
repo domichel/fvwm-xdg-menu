@@ -26,15 +26,12 @@ TODO to reach the holly goal:
     we don't want any single Audio and Video application to also
     appear in AudioVideo.
 
-You may have to symlink applications.menu to fvwm-applications.menu
-in /etc/xdg/menus:
-
-    cd /etc/xdg/menus
-    ln -s fvwm-applications.menu applications.menu
+Don't make a symlink applications.menu to fvwm-applications.menu
+in /etc/xdg/menus. This doesn't arm fvwm, but can make silly bugs like
+kbuildsycoca4 that run forever at 100 % cpu.
 
 
-This work is copyrighted under the GPL v.2, look at the
-LICENSE file for details.
+This work is copyrighted under the GPL v.2, look at the LICENSE file for details.
 
 Enjoy,
 Dominique Michel
