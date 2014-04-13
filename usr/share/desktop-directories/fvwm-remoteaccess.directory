@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Remote Access
+Name[en_GB]=Remote Access
+Name[fr]=Accès à distance
+Comment=A tool to remotely manage your PC
+Comment[en_GB]=A tool to remotely manage your PC
+Comment[fr]=Un outil pour administrer votre PC à distance

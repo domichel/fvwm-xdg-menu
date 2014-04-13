@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Dialup
+Name[en_GB]=Dialup
+Name[fr]=Dialup
+Comment=A dial-up program
+Comment[en_GB]=A dial-up program
+Comment[fr]=Un programme de dialup

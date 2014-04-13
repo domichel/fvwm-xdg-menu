@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Telephony
+Name[en_GB]=Telephony
+Name[fr]=Téléphonie
+Comment=Telephony via PC
+Comment[en_GB]=Telephony via PC
+Comment[fr]=Téléphonie par le PC

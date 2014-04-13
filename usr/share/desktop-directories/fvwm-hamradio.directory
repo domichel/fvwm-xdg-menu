@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Ham Radio
+Name[en_GB]=Ham Radio
+Name[fr]=Radio amateur
+Comment=HAM radio software
+Comment[en_GB]=HAM radio software
+Comment[fr]=Logiciel de radio amateur

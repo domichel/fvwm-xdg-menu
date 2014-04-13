@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=News
+Name[en_GB]=News
+Name[fr]=Nouvelles
+Comment=A news reader or a news ticker
+Comment[en_GB]=A news reader or a news ticker
+Comment[fr]=Logiciel pour lire et envoyer des nouvelles

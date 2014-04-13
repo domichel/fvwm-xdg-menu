@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Web Development
+Name[en_GB]=Web Development
+Name[fr]=Développement Internet
+Comment=A tool for web developers
+Comment[en_GB]=A tool for web developers
+Comment[fr]=Un outil pour développeurs Internet

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=audio-x-generic
+Name=Recorder
+Name[en_GB]=Recorder
+Name[fr]=Enregistreur
+Comment=Application to record audio/video files
+Comment[en_GB]=Application to record audio/video files
+Comment[fr]=Applications pour enregistrer des fichiers audio/vidéo

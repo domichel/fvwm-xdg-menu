@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Instant Messaging
+Name[en_GB]=Instant Messaging
+Name[fr]=Messagerie instantanée
+Comment=An instant messaging client
+Comment[en_GB]=An instant messaging client
+Comment[fr]=Un client de messagerie instantanée

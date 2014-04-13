@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Feed
+Name[en_GB]=Feed
+Name[fr]=Feed
+Comment=RSS, podcast and other subscription based contents
+Comment[en_GB]=RSS, podcast and other subscription based contents
+Comment[fr]=RSS, podcast et autres contenus basés sur une souscription

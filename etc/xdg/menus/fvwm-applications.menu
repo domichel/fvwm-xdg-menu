@@ -1,7 +1,7 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
   "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
-<!-- PackageManager OK -->
+<!-- DiscBurning OK -->
 <Menu>
     <Name>FVWM</Name>
 
@@ -136,6 +136,7 @@
                 <Filename>xfce4-run.desktop</Filename>
             </Or>
 	    <Category>TextTools</Category>
+	    <Category>TelephonyTools</Category>
         </Exclude>
 	<Menu>
 	    <Name>Text Tools</Name>
@@ -157,6 +158,13 @@
 	        	<Category>TextTools</Category>
 		    </Not>
 		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>TelephonyTools</Name>
+		<Directory>fvwm-telephonytools.directory</Directory>
+    		<Include>
+    	    	    <Category>TelephonyTools</Category>
+    		</Include>
 	    </Menu>
 	</Menu>
     </Menu>
@@ -255,10 +263,15 @@
 	</Menu>
 	<Menu>
 	    <Name>Web Development</Name>
-	    <Directory>fvwm-webdev.directory</Directory>
+	    <Directory>fvwm-webdevelopment.directory</Directory>
     	    <Include>
     	        <Category>WebDevelopment</Category>
     	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Development</Category>
+	        </Not>
+	    </Exclude>
 	</Menu>
     </Menu>
 
@@ -535,6 +548,7 @@
 	<Menu>
 	    <!-- Audio menu -->
 	    <Name>Audio</Name>
+	    <Directory>fvwm-audio.directory</Directory>
     	    <Include>
         	<Category>Audio</Category>
     	    </Include>
@@ -543,70 +557,190 @@
 		<Category>Midi</Category>
 		<Category>Mixer</Category>
 		<Category>Sequencer</Category>
+		<Category>Tuner</Category>
+		<Category>TV</Category>
 		<Category>AudioVideoEditing</Category>
 		<Category>Player</Category>
 		<Category>Recorder</Category>
 	    </Exclude>
-	    <Menu>
+    	    <Menu>
 		<Name>HamRadio</Name>
+		<Directory>fvwm-hamradio.directory</Directory>
     		<Include>
-    		    <Category>HamRadio</Category>
+    	    	    <Category>HamRadio</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
 		<Name>Midi</Name>
+		<Directory>fvwm-midi.directory</Directory>
     		<Include>
     		    <Category>Midi</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
 		<Name>Mixer</Name>
+		<Directory>fvwm-mixer.directory</Directory>
     		<Include>
     		    <Category>Mixer</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
 		<Name>Sequencer</Name>
+		<Directory>fvwm-sequencer.directory</Directory>
     		<Include>
     		    <Category>Sequencer</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
-		<Name>AudioVideoEditing</Name>
+		<Name>Tuner</Name>
+		<Directory>fvwm-tuner.directory</Directory>
+    		<Include>
+    		    <Category>Tuner</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>TV</Name>
+		<Directory>fvwm-tv.directory</Directory>
+    		<Include>
+    		    <Category>TV</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Audio Video Editing</Name>
+		<Directory>fvwm-audiovideoediting.directory</Directory>
     		<Include>
     		    <Category>AudioVideoEditing</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
 		<Name>Player</Name>
+		<Directory>fvwm-player.directory</Directory>
     		<Include>
     		    <Category>Player</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	    <Menu>
 		<Name>Recorder</Name>
+		<Directory>fvwm-recorder.directory</Directory>
     		<Include>
     		    <Category>Recorder</Category>
     		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Audio</Category>
+	    	    </Not>
+		</Exclude>
 	    </Menu>
 	</Menu>
 	<Menu>
 	    <!-- Video menu -->
 	    <Name>Video</Name>
+	    <Directory>fvwm-video.directory</Directory>
 	    <Include>
                 <Category>Video</Category>
     	    </Include>
+	    <Exclude>
+		<Category>AudioVideoEditing</Category>
+		<Category>Player</Category>
+		<Category>Recorder</Category>
+	    </Exclude>
+	    <Menu>
+		<Name>Audio Video Editing</Name>
+		<Directory>fvwm-audiovideoediting.directory</Directory>
+    		<Include>
+    		    <Category>AudioVideoEditing</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Video</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Player</Name>
+		<Directory>fvwm-player.directory</Directory>
+    		<Include>
+    		    <Category>Player</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Video</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Recorder</Name>
+		<Directory>fvwm-recorder.directory</Directory>
+    		<Include>
+    		    <Category>Recorder</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Video</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
 	</Menu>
 	<Menu>
 	    <!-- AudioVideo menu -->
 	    <Name>AudioVideo></Name>
+	    <Directory>fvwm-audiovideo.directory</Directory>
 	    <Include>
                 <Category>AudioVideo</Category>
 	    </Include>
 	    <Exclude>
-		    <Category>Audio</Category>
-		    <Category>Video</Category>
-		    <Category>Database</Category>
+		<Category>Audio</Category>
+		<Category>Video</Category>
+		<Category>Database</Category>
+		<Category>Midi</Category>
+		<Category>Mixer</Category>
+		<Category>Sequencer</Category>
+		<Category>Tuner</Category>
+		<Category>TV</Category>
+		<Category>AudioVideoEditing</Category>
+		<Category>Player</Category>
+		<Category>Recorder</Category>
+		<Category>DiscBurning</Category>
 	    </Exclude>
 	    <Menu>
 		<Name>Database</Name>
@@ -620,6 +754,96 @@
 		    </Not>
 		</Exclude>
 	    </Menu>
+	    <Menu>
+		<Name>Midi</Name>
+		<Directory>fvwm-midi.directory</Directory>
+    		<Include>
+    		    <Category>Midi</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Mixer</Name>
+		<Directory>fvwm-mixer.directory</Directory>
+    		<Include>
+    		    <Category>Mixer</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Sequencer</Name>
+		<Directory>fvwm-sequencer.directory</Directory>
+    		<Include>
+    		    <Category>Sequencer</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Tuner</Name>
+		<Directory>fvwm-tuner.directory</Directory>
+    		<Include>
+    		    <Category>Tuner</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>TV</Name>
+		<Directory>fvwm-tv.directory</Directory>
+    		<Include>
+    		    <Category>TV</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Audio Video Editing</Name>
+		<Directory>fvwm-audiovideoediting.directory</Directory>
+    		<Include>
+    		    <Category>AudioVideoEditing</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Player</Name>
+		<Directory>fvwm-player.directory</Directory>
+    		<Include>
+    		    <Category>Player</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Recorder</Name>
+		<Directory>fvwm-recorder.directory</Directory>
+    		<Include>
+    		    <Category>Recorder</Category>
+    		</Include>
+		<Exclude>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+	    </Menu>
+	    <Menu>
+		<Name>Disc Burning</Name>
+		<Directory>fvwm-discburning.directory</Directory>
+    		<Include>
+    		    <Category>DiscBurning</Category>
+    		</Include>
+	    </Menu>
 	</Menu>
     </Menu>
 
@@ -631,17 +855,135 @@
             <Category>Network</Category>
         </Include>
         <Exclude>
-            <Or>
-                <Filename>exo-mail-reader.desktop</Filename>
-                <Filename>exo-web-browser.desktop</Filename>
-            </Or>
 	    <Category>Email</Category>
+	    <Category>Chat</Category>
+	    <Category>IRCClient</Category>
+	    <Category>InstantMessaging</Category>
+            <Category>Feed</Category>
+            <Category>FileTransfer</Category>
+            <Category>Dialup</Category>
+            <Category>P2P</Category>
+            <Category>HamRadio</Category>
+            <Category>News</Category>
+            <Category>RemoteAccess</Category>
+            <Category>Telephony</Category>
+            <Category>VideoConference</Category>
+            <Category>WebBrowser</Category>
+            <Category>WebDevelopment</Category>
         </Exclude>
     	<Menu>
 	    <Name>Email</Name>
 	    <Directory>fvwm-email.directory</Directory>
     	    <Include>
     	    	<Category>Email</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Network</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+    	<Menu>
+	    <Name>Chat</Name>
+	    <Directory>fvwm-chat.directory</Directory>
+    	    <Include>
+    	    	<Category>Chat</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>IRC Client</Name>
+	    <Directory>fvwm-ircclient.directory</Directory>
+    	    <Include>
+    	    	<Category>IRCClient</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Instant Messaging</Name>
+	    <Directory>fvwm-instantmessaging.directory</Directory>
+    	    <Include>
+    	    	<Category>InstantMessaging</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Feed</Name>
+	    <Directory>fvwm-feed.directory</Directory>
+    	    <Include>
+    	    	<Category>Feed</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>File Transfert</Name>
+	    <Directory>fvwm-filetransfert.directory</Directory>
+    	    <Include>
+    	    	<Category>FileTransfert</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Dialup</Name>
+	    <Directory>fvwm-dialup.directory</Directory>
+    	    <Include>
+    	    	<Category>Dialup</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Ham Radio</Name>
+	    <Directory>fvwm-hamradio.directory</Directory>
+    	    <Include>
+    	    	<Category>HamRadio</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Network</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+    	<Menu>
+	    <Name>News</Name>
+	    <Directory>fvwm-news.directory</Directory>
+    	    <Include>
+    	    	<Category>News</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Peer to Peer</Name>
+	    <Directory>fvwm-p2p.directory</Directory>
+    	    <Include>
+    	    	<Category>P2P</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Remote Access</Name>
+	    <Directory>fvwm-remoteaccess.directory</Directory>
+    	    <Include>
+    	    	<Category>RemoteAccess</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Telephony</Name>
+	    <Directory>fvwm-telephony.directory</Directory>
+    	    <Include>
+    	    	<Category>Telephony</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Video Conference</Name>
+	    <Directory>fvwm-videoconference.directory</Directory>
+    	    <Include>
+    	    	<Category>VideoConference</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Web Browser</Name>
+	    <Directory>fvwm-webbrowser.directory</Directory>
+    	    <Include>
+    	    	<Category>WebBrowser</Category>
+    	    </Include>
+	</Menu>
+    	<Menu>
+	    <Name>Web Development</Name>
+	    <Directory>fvwm-webdevelopment.directory</Directory>
+    	    <Include>
+    	    	<Category>WebDevelopment</Category>
     	    </Include>
 	    <Exclude>
 		<Not>

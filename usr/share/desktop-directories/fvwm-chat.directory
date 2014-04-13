@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=Chat
+Name[en_GB]=Chat
+Name[fr]=Chat
+Comment=A chat client
+Comment[en_GB]=A chat client
+Comment[fr]=Un client de bavardage instantanée

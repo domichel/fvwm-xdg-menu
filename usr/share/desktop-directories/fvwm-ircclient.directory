@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=IRC Client
+Name[en_GB]=IRC Client
+Name[fr]=Client IRC
+Comment=An IRC client
+Comment[en_GB]=An IRC client
+Comment[fr]=Un client IRC

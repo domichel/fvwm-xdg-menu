@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=video-x-generic
+Name=Disc Burning
+Name[en_GB]=Disc Burning
+Name[fr]=Gravage de disque
+Comment=Application to burn a disc
+Comment[en_GB]=Application to burn a disc
+Comment[fr]=Application pour graver un disque

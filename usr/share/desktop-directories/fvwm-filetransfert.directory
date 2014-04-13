@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=gnome-globe
+Name=File Transfert
+Name[en_GB]=File Transfert
+Name[fr]=Transfert de fichiers
+Comment=Tools like FTP or P2P programs
+Comment[en_GB]=Tools like FTP or P2P programs
+Comment[fr]=Outils comme des programmes FTP ou P2P
