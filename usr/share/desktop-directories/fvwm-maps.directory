@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-science
+Name=Maps
+Name[en_GB]=Maps
+Name[fr]=Cartes
+Comment=Software for viewing maps, navigation, mapping, GPS
+Comment[en_GB]=Software for viewing maps, navigation, mapping, GPS
+Comment[fr]=Logiciel pour lire des cartes, de navigation, de cartographie, GPS
