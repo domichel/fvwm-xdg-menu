@@ -7,6 +7,7 @@ The goal is to have an application menu in fvwm that support
 the additional FreeDesktop categories out-of-the box, that
 on any GNU/Linux distribution.
 
+It should work with any xdg compliant wm/desktop.
 
 LICENSE:
 --------
