@@ -66,7 +66,7 @@ CONTRIBUTE:
 Send any comment, bug report, etc. to <dominique_libre@users.sourgeforge.net> or at the website:
 https://github.com/domichel/fvwm-xdg-menu
 
-Currently, only the English and French translations are implemented. Please considere contribute
+Currently, only the English and French translations are implemented. Please considere to contribute
 new translations. It is just to add them in the files in /usr/share/desktop-directories.
 
 Artwork contributions for the icons will be very welcome too.
