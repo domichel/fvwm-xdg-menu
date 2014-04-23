@@ -7,11 +7,7 @@ The goal is to have an application menu in fvwm that support
 the additional FreeDesktop categories out-of-the box, that
 on any GNU/Linux distribution.
 
-For now, the files will be provided without any installation
-procedure. To copy them in the correct XDG locations must be
-enough to make the menu to work fine.
-
-When done, a patch for inclusion into fvwm will be done.
+It is a Makefile now, read the INSTALL file.
 
 DONE:
  - The main skeleton of the menu.

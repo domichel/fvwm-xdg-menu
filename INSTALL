@@ -1,0 +1,12 @@
+TO INSTALL:
+-----------
+Run "make install" as root.
+
+It understaand the prefix variable, as example "PREFIX=/usr make install"
+
+
+TO UNINSTALL:
+-------------
+Run "make uninstall" with the same PREFIX that was used to install.
+
+
