@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-electronics
+Name=Electronics
+Name[en_GB]=Electronics
+Name[fr]=Électronique
+Comment=Electronics software, e.g. a circuit designer
+Comment[en_GB]=Electronics software, e.g. a circuit designer
+Comment[fr]=Logiciel d'électronique, par exemple pour faire du dessin de circuit

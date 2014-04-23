@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=package_science
+Name=Engineering
+Name[en_GB]=Engineering
+Name[fr]=Ingénierie
+Comment=Engineering software, e.g. CAD programs
+Comment[en_GB]=Engineering software, e.g. CAD programs
+Comment[fr]=Logiciels d'ingénierie, par exemple des programmes de CAO

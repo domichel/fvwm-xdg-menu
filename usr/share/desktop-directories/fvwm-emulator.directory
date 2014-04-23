@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-games
+Name=Emulator
+Name[en_GB]=Emulator
+Name[fr]=Émulateur
+Comment=Emulator of another platform, such as a DOS emulator
+Comment[en_GB]=Emulator of another platform, such as a DOS emulator
+Comment[fr]=Émulateur d'une autre plate-forme, tel un émulateur DOS

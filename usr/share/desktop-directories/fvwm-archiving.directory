@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-accessories
+Name=Archiving
+Name[en_GB]=Archiving
+Name[fr]=Archivage
+Comment=A tool to archive/backup data
+Comment[en_GB]=A tool to archive/backup data
+Comment[fr]=Un outil pour archiver ou faire des sauvegardes de données

@@ -1,7 +1,7 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
   "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
-<!-- Robotics OK -->
+<!-- Engineering OK -->
 <Menu>
     <Name>FVWM</Name>
 
@@ -44,6 +44,9 @@
 	    <Category>Security</Category>
 	    <Category>Accessibility</Category>
 	    <Category>Screensaver</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Desktop Settings</Name>
@@ -114,6 +117,42 @@
                 <Category>Screensaver</Category>
             </Include>
         </Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Accesories menu -->
@@ -138,6 +177,11 @@
 	    <Category>TextTools</Category>
 	    <Category>TelephonyTools</Category>
     	    <Category>Maps</Category>
+    	    <Category>Spirituality</Category>
+	    <Category>Amusement</Category>
+	    <Category>Archiving</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
         </Exclude>
 	<Menu>
 	    <Name>Text Tools</Name>
@@ -180,6 +224,71 @@
 	        </Not>
 	    </Exclude>
 	</Menu>
+	<Menu>
+	    <Name>Spirituality</Name>
+	    <Directory>fvwm-spirituality.directory</Directory>
+    	    <Include>
+    	        <Category>Spirituality</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Utility</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+	<Menu>
+	    <Name>Archiving</Name>
+	    <Directory>fvwm-archiving.directory</Directory>
+    	    <Include>
+    	        <Category>Archiving</Category>
+    	    </Include>
+	    <Exclude>
+        	<Category>Compression</Category>
+	    </Exclude>
+	    <Menu>
+		<Name>Compression</Name>
+		<Directory>fvwm-compression.directory</Directory>
+    		<Include>
+    	    	    <Category>Compression</Category>
+    		</Include>
+	    </Menu>
+	</Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Development menu -->
@@ -200,6 +309,9 @@
 	    <Category>Database</Category>
 	    <Category>ProjectManagement</Category>
 	    <Category>WebDevelopment</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Building</Name>
@@ -286,6 +398,42 @@
 	        </Not>
 	    </Exclude>
 	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Education menu -->
@@ -320,6 +468,11 @@
     	    <Category>MedicalSoftware</Category>
     	    <Category>Physics</Category>
     	    <Category>Robotics</Category>
+    	    <Category>Spirituality</Category>
+    	    <Category>Sports</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
         </Exclude>
 	<Menu>
 	    <Name>Art</Name>
@@ -426,8 +579,21 @@
 	    <Exclude>
 		<Not>
         	    <Category>Education</Category>
+    	        <Category>ParallelComputing</Category>
 	        </Not>
 	    </Exclude>
+	    <Menu>
+		<Name>ParallelComputing</Name>
+		<Directory>fvwm-parallelcomputing.directory</Directory>
+    		<Include>
+    	    	    <Category>ParallelComputing</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Education</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
 	</Menu>
 	<Menu>
 	    <Name>Data Visualization</Name>
@@ -622,6 +788,66 @@
 	        </Not>
 	    </Exclude>
 	</Menu>
+	<Menu>
+	    <Name>Spirituality</Name>
+	    <Directory>fvwm-spirituality.directory</Directory>
+    	    <Include>
+    	        <Category>Spirituality</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Education</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Sports</Name>
+	    <Directory>fvwm-sports.directory</Directory>
+    	    <Include>
+    	        <Category>Sports</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Education</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
 
@@ -656,6 +882,11 @@
     	    <Category>MedicalSoftware</Category>
     	    <Category>Physics</Category>
     	    <Category>Robotics</Category>
+    	    <Category>Spirituality</Category>
+    	    <Category>Sports</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
         </Exclude>
 	<Menu>
 	    <Name>Art</Name>
@@ -751,7 +982,20 @@
 		<Not>
         	    <Category>Science</Category>
 	        </Not>
+    	        <Category>ParallelComputing</Category>
 	    </Exclude>
+	    <Menu>
+		<Name>ParallelComputing</Name>
+		<Directory>fvwm-parallelcomputing.directory</Directory>
+    		<Include>
+    	    	    <Category>ParallelComputing</Category>
+    		</Include>
+		<Exclude>
+		    <Not>
+        		<Category>Science</Category>
+	    	    </Not>
+		</Exclude>
+	    </Menu>
 	</Menu>
 	<Menu>
 	    <Name>Data Visualization</Name>
@@ -946,6 +1190,66 @@
 	        </Not>
 	    </Exclude>
 	</Menu>
+	<Menu>
+	    <Name>Spirituality</Name>
+	    <Directory>fvwm-spirituality.directory</Directory>
+    	    <Include>
+    	        <Category>Spirituality</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Science</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Sports</Name>
+	    <Directory>fvwm-sports.directory</Directory>
+    	    <Include>
+    	        <Category>Sports</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+        	    <Category>Science</Category>
+	        </Not>
+	    </Exclude>
+	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
 
@@ -970,6 +1274,10 @@
             <Category>Simulation</Category>
             <Category>SportsGame</Category>
             <Category>StrategyGame</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Emulator</Category>
+	    <Category>Engineering</Category>
         </Exclude>
 	<Menu>
 	    <Name>Action Games</Name>
@@ -1062,6 +1370,54 @@
     	        <Category>StrategyGame</Category>
     	    </Include>
 	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Emulator</Name>
+            <Directory>fvwm-emulator.directory</Directory>
+            <Include>
+                <Category>Emulator</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Graphics menu -->
@@ -1081,6 +1437,9 @@
 	    <Category>Photography</Category>
 	    <Category>Publishing</Category>
 	    <Category>Viewer</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Vector Graphics</Name>
@@ -1203,6 +1562,42 @@
     		<Category>Office</Category>
     	    </Exclude>
 	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Electronics</Name>
+    	    <Directory>fvwm-electronics.directory</Directory>
+    	    <Include>
+                <Category>Electronics</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Engineering</Name>
+    	    <Directory>fvwm-engineering.directory</Directory>
+    	    <Include>
+        	<Category>Engineering</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Multimedia menu -->
@@ -1226,6 +1621,9 @@
 		<Category>AudioVideoEditing</Category>
 		<Category>Player</Category>
 		<Category>Recorder</Category>
+		<Category>Amusement</Category>
+		<Category>Electronics</Category>
+		<Category>Engineering</Category>
 	    </Exclude>
     	    <Menu>
 		<Name>HamRadio</Name>
@@ -1335,6 +1733,42 @@
 	    	    </Not>
 		</Exclude>
 	    </Menu>
+    	    <Menu>
+        	<Name>Amusement</Name>
+        	<Directory>fvwm-amusement.directory</Directory>
+    	        <Include>
+            	    <Category>Amusement</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Electronics</Name>
+        	<Directory>fvwm-electronics.directory</Directory>
+        	<Include>
+            	    <Category>Electronics</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Engineering</Name>
+        	<Directory>fvwm-engineering.directory</Directory>
+        	<Include>
+            	    <Category>Engineering</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
 	</Menu>
 	<Menu>
 	    <!-- Video menu -->
@@ -1347,6 +1781,9 @@
 		<Category>AudioVideoEditing</Category>
 		<Category>Player</Category>
 		<Category>Recorder</Category>
+		<Category>Amusement</Category>
+    		<Category>Electronics</Category>
+		<Category>Engineering</Category>
 	    </Exclude>
 	    <Menu>
 		<Name>Audio Video Editing</Name>
@@ -1384,6 +1821,42 @@
 	    	    </Not>
 		</Exclude>
 	    </Menu>
+    	    <Menu>
+        	<Name>Amusement</Name>
+        	<Directory>fvwm-amusement.directory</Directory>
+        	<Include>
+            	    <Category>Amusement</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Electronics</Name>
+        	<Directory>fvwm-electronics.directory</Directory>
+        	<Include>
+            	    <Category>Electronics</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Engineering</Name>
+        	<Directory>fvwm-engineering.directory</Directory>
+        	<Include>
+            	    <Category>Engineering</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
 	</Menu>
 	<Menu>
 	    <!-- AudioVideo menu -->
@@ -1406,6 +1879,9 @@
 		<Category>Recorder</Category>
 		<Category>DiscBurning</Category>
 		<Category>Music</Category>
+		<Category>Amusement</Category>
+		<Category>Electronics</Category>
+		<Category>Engineering</Category>
 	    </Exclude>
 	    <Menu>
 		<Name>Database</Name>
@@ -1521,6 +1997,44 @@
 	    	    </Not>
 		</Exclude>
 	    </Menu>
+    	    <Menu>
+        	<Name>Amusement</Name>
+        	<Directory>fvwm-amusement.directory</Directory>
+        	<Include>
+            	    <Category>Amusement</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Electronics</Name>
+        	<Directory>fvwm-electronics.directory</Directory>
+        	<Include>
+            	    <Category>Electronics</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Engineering</Name>
+        	<Directory>fvwm-engineering.directory</Directory>
+        	<Include>
+            	    <Category>Engineering</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+    	    </Menu>
 	</Menu>
     </Menu>
 
@@ -1547,6 +2061,9 @@
             <Category>VideoConference</Category>
             <Category>WebBrowser</Category>
             <Category>WebDevelopment</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
         </Exclude>
     	<Menu>
 	    <Name>Email</Name>
@@ -1668,6 +2185,42 @@
 	        </Not>
 	    </Exclude>
 	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Electronics</Name>
+            <Directory>fvwm-electronics.directory</Directory>
+            <Include>
+                <Category>Electronics</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Engineering</Name>
+            <Directory>fvwm-engineering.directory</Directory>
+            <Include>
+                <Category>Engineering</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
     </Menu>
 
     <!-- Office menu -->
@@ -1694,6 +2247,9 @@
 	    <Category>Photography</Category>
 	    <Category>Publishing</Category>
 	    <Category>Viewer</Category>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Engineering</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Calendar</Name>
@@ -1836,6 +2392,42 @@
     		<Category>Graphics</Category>
     	    </Exclude>
 	</Menu>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Electronics</Name>
+            <Directory>fvwm-electronics.directory</Directory>
+            <Include>
+                <Category>Electronics</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Engineering</Name>
+            <Directory>fvwm-engineering.directory</Directory>
+            <Include>
+                <Category>Engineering</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
     </Menu>
 
     <!-- System menu -->
@@ -1852,7 +2444,59 @@
             <Or>
                 <Filename>xfce4-session-logout.desktop</Filename>
             </Or>
+	    <Category>Amusement</Category>
+	    <Category>Electronics</Category>
+	    <Category>Emulator</Category>
+	    <Category>Engineering</Category>
         </Exclude>
+        <Menu>
+            <Name>Amusement</Name>
+            <Directory>fvwm-amusement.directory</Directory>
+            <Include>
+                <Category>Amusement</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Electronics</Name>
+            <Directory>fvwm-electronics.directory</Directory>
+            <Include>
+                <Category>Electronics</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Emulator</Name>
+            <Directory>fvwm-emulator.directory</Directory>
+            <Include>
+                <Category>Emulator</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Engineering</Name>
+            <Directory>fvwm-engineering.directory</Directory>
+            <Include>
+                <Category>Engineering</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
     </Menu>
 
     <!-- Other menu / catch all -->

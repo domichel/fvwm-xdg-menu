@@ -19,7 +19,7 @@ DONE:
     include them into the menu. If a desktop file contain 2
     main categories and 1 additional category, the program
     will appear 2 times.
- - The additional categories until Robotics.
+ - The additional categories until Engineering.
    See http://standards.freedesktop.org/menu-spec/latest/apas02.html for the list.
 
 TODO to reach the holly goal:

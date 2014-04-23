@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-accessories
+Name=Compression
+Name[en_GB]=Compression
+Name[fr]=Compression
+Comment=A tool to manage compressed data/archives
+Comment[en_GB]=A tool to manage compressed data/archives
+Comment[fr]=Un outil pour gérer des données ou des archives compressées
