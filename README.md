@@ -36,7 +36,7 @@ Read 'man fvwm-menu-desktop' for other possibilities.
 
 FLUXBOX and other desktops:
 ---------------------------
-You will need archlinux-xdg-menu from https://www.archlinux.org/packages/community/any/archlinux-xdg-linux.
+You will need archlinux-xdg-menu from https://www.archlinux.org/packages/community/any/archlinux-xdg-menu/
 Download it and run something like:
 
     ./xdg_menu --root-menu /etc/xdg/menus/fvwm-applications.menu --format fluxbox --desktop fluxbox --fullmenu > menu
