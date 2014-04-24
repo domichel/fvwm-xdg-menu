@@ -47,6 +47,12 @@ For more about xdg_menu, see https://wiki.archlinux.org/index.php/XdgMenu
 Xdg_menu can be used with several other desktops: twm, WindowMaker, fvwm, icewm, ion3, blackbox, fluxbox, openbox,
 xfce4, openbox3, openbox3-pipe, awesome, jwm and readable.
 
+With xfce, kde and gnome, you may just symlink the menu:
+
+    ln -s /etc/xdg/menus/fvwm-applications.menu ~/.config/menus/applications-merged/fvwm-applications.menu
+
+The result will be a mix of the original xfce/kde/gnome menu and of this one.
+
 
 DONE:
 -----
