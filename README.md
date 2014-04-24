@@ -34,6 +34,20 @@ Alt+M will launch the menu. Be patient at the first invocation.
 Read 'man fvwm-menu-desktop' for other possibilities.
 
 
+FLUXBOX and other desktops:
+---------------------------
+You will need archlinux-xdg-menu from https://www.archlinux.org/packages/community/any/archlinux-xdg-linux.
+Download it and run something like:
+
+    ./xdg_menu --root-menu /etc/xdg/menus/fvwm-applications.menu --format fluxbox --desktop fluxbox --fullmenu > menu
+
+and copy that menu file to ~/.fluxbox
+
+For more about xdg_menu, see https://wiki.archlinux.org/index.php/XdgMenu
+Xdg_menu can be used with several other desktops: twm, WindowMaker, fvwm, icewm, ion3, blackbox, fluxbox, openbox,
+xfce4, openbox3, openbox3-pipe, awesome, jwm and readable.
+
+
 DONE:
 -----
  - The main skeleton of the menu with all the additional categories.
