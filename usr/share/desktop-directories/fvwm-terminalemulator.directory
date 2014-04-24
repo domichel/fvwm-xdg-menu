@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-system
+Name=Terminal Emulator
+Name[en_GB]=Terminal Emulator
+Name[fr]=Émulateur de terminal
+Comment=A terminal emulator application
+Comment[en_GB]=A terminal emulator application
+Comment[fr]=Une application pour émuler un terminal

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-system
+Name=Monitor
+Name[en_GB]=Monitor
+Name[fr]=Moniteur
+Comment=Monitor application/applet that monitor some resource or activity
+Comment[en_GB]=Monitor application/applet that monitor some resource or activity
+Comment[fr]=Une application ou un applet de monitoring de ressources ou d'activités

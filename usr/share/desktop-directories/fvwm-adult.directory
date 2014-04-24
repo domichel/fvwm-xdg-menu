@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=adult
+Name=Adult
+Name[en_GB]=Adult
+Name[fr]=Adulte
+Comment=Application handles adult or explicit material
+Comment[en_GB]=Application handles adult or explicit material
+Comment[fr]=Application qui contien du contenu pour adulte ou explicite

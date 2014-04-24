@@ -1,13 +1,8 @@
 fvwm-xdg-menu
 =============
 
-This is an xdg-menu for use with fvwm and fvwm-menu-desktop.
+This is a xdg application menu with full support for the additional categories for fvwm and other xdg compliant desktops.
 
-The goal is to have an application menu in fvwm that support
-the additional FreeDesktop categories out-of-the box, that
-on any GNU/Linux distribution.
-
-It should work with any xdg compliant wm/desktop.
 
 LICENSE:
 --------
@@ -21,7 +16,7 @@ It is a Makefile now, read the INSTALL file.
 
 FVWM:
 -----
-To incorporate it into fvwm, just put something like the following into your configuration:
+To incorporate the application menu into fvwm, just put something like the following into your configuration:
 
 DestroyMenu FvwmMenu
 AddToMenu FvwmMenu
@@ -36,23 +31,23 @@ and assign a binding:
 Key M A 4 Menu Fvwm-Menu
 
 Alt+M will launch the menu. Be patient at the first invocation.
+Read 'man fvwm-menu-desktop' for other possibilities.
 
 
 DONE:
 -----
- - The main skeleton of the menu.
- - Some addtional categories are included with a mechanism to
-    include them into the menu. If a desktop file contain 2
-    main categories and 1 additional category, the program
-    will appear 2 times.
- - The additional categories until Engineering.
-   See http://standards.freedesktop.org/menu-spec/latest/apas02.html for the list.
+ - The main skeleton of the menu with all the additional categories.
+   KDE, GNOME, XFCE, GTK, QT, Java and Motif are not implemented. These categories
+   give unecessary complicated menus and they are all for GUI applications which
+   have other categories. It is also the ConsoleOnly category for the console
+   only applications! Like it or not, that's my choice.
+   
+   See http://standards.freedesktop.org/menu-spec/latest/apas02.html for the specification.
 
 
-TODO to reach the holly goal:
- - Add the remaining additional categories.
-
-When done, find some nice artwork for all the categories (icons).
+TODO:
+-----
+Find some nice artwork icons for all the categories and incorporate them into the menu.
 
 
 NOTE:

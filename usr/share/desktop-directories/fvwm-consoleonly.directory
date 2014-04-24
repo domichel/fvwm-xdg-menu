@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-accessories
+Name=Console Only
+Name[en_GB]=Console Only
+Name[fr]=Applications console
+Comment=Application that only work inside a terminal (text based or command line application)
+Comment[en_GB]=Application that only work inside a terminal (text based or command line application)
+Comment[fr]=Application qui fonctionne seulement dans un terminal (application texte ou en ligne de commande)

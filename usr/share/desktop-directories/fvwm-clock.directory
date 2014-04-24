@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-accessories
+Name=Clock
+Name[en_GB]=Clock
+Name[fr]=Horloge
+Comment=A clock application/applet
+Comment[en_GB]=A clock application/applet
+Comment[fr]=Une application ou un applet d'horloge

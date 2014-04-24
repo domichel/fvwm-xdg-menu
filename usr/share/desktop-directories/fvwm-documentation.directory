@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=help
+Name=Documentation
+Name[en_GB]=Documentation
+Name[fr]=Documentation
+Comment=Help or documentation
+Comment[en_GB]=Help or documentation
+Comment[fr]=Aide ou documentation

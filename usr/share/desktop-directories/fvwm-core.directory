@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon=applications-accessories
+Name=Core
+Name[en_GB]=Core
+Name[fr]=Noyau
+Comment=Important application, core to the desktop such as a file manager or a help browser
+Comment[en_GB]=Important application, core to the desktop such as a file manager or a help browser
+Comment[fr]=Application importante, noyau du bureau comme un gestionnaire de fichiers ou un navigateur d'aide

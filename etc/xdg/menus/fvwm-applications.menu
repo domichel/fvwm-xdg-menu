@@ -1,7 +1,12 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
   "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
-<!-- Engineering OK -->
+<!-- fvwm-applications.menu provide a xdh menu with full support for the addtional categories.
+     If the generated menu do silly things, please complain to the provider of the desktop files
+     provided by the application(s) which is/are at the wrong place.
+     NOTE: It doesn't implement the KDE, GNOME, XFCE, GTK, QT, Motif and Java categories. I don't
+     like the resulting menu they give. -->
+
 <Menu>
     <Name>FVWM</Name>
 
@@ -9,7 +14,7 @@
 	 category can be find in many main categories. In consequence, we will use
 	 <Exclude> <Not> statements to let the desktop file place its application.
 	 That imply, some apps will be find in more than one place, other in only
-	 one. This is so upstream whant it. -->
+	 one. This is so upstream want it. -->
 
     <!-- Search default locations -->
     <DefaultAppDirs/>
@@ -47,6 +52,11 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Security</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Desktop Settings</Name>
@@ -102,6 +112,11 @@
     	    <Include>
     	        <Category>Security</Category>
     	    </Include>
+	    <Exclude>
+		<Not>
+		    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
 	</Menu>
 	<Menu>
 	    <Name>Accessibility</Name>
@@ -109,6 +124,11 @@
     	    <Include>
     	        <Category>Accessibility</Category>
     	    </Include>
+	    <Exclude>
+		<Not>
+		    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
 	</Menu>
         <Menu>
             <Name>Screensavers</Name>
@@ -153,6 +173,66 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+        <Menu>
+            <Name>Security</Name>
+            <Directory>fvwm-security.directory</Directory>
+            <Include>
+                <Category>Security</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Settings</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Accesories menu -->
@@ -161,8 +241,6 @@
         <Directory>fvwm-accessories.directory</Directory>
         <Include>
             <Or>
-                <Category>Accessibility</Category>
-                <Category>Core</Category>
                 <Category>Legacy</Category>
                 <Category>Utility</Category>
             </Or>
@@ -182,6 +260,15 @@
 	    <Category>Archiving</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+    	    <Category>FileTools</Category>
+            <Category>Accessibility</Category>
+    	    <Category>Calculator</Category>
+            <Category>Clock</Category>
+    	    <Category>TextEditor</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
         </Exclude>
 	<Menu>
 	    <Name>Text Tools</Name>
@@ -289,6 +376,114 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+    	<Menu>
+    	    <Name>File Tools</Name>
+    	    <Directory>fvwm-filetools.directory</Directory>
+    	    <Include>
+        	<Category>FileTools</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+	<Menu>
+	    <Name>Accessibility</Name>
+	    <Directory>fvwm-accessibility.directory</Directory>
+    	    <Include>
+    	        <Category>Accessibility</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+		    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Calculator</Name>
+	    <Directory>fvwm-calculator.directory</Directory>
+    	    <Include>
+    	        <Category>Calculator</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+		    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+	<Menu>
+	    <Name>Clock</Name>
+	    <Directory>fvwm-clock.directory</Directory>
+    	    <Include>
+    	        <Category>Clock</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+		    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+-	<Menu>
+	    <Name>Text Editor</Name>
+	    <Directory>fvwm-texteditor.directory</Directory>
+    	    <Include>
+    	        <Category>TextEditor</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+		    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+	</Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Utility</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Development menu -->
@@ -312,6 +507,10 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Building</Name>
@@ -434,6 +633,54 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Development</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Education menu -->
@@ -473,6 +720,10 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
         </Exclude>
 	<Menu>
 	    <Name>Art</Name>
@@ -848,6 +1099,54 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Education</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
 
@@ -887,6 +1186,10 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
         </Exclude>
 	<Menu>
 	    <Name>Art</Name>
@@ -1250,6 +1553,54 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Science</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
 
@@ -1278,6 +1629,10 @@
 	    <Category>Electronics</Category>
 	    <Category>Emulator</Category>
 	    <Category>Engineering</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
         </Exclude>
 	<Menu>
 	    <Name>Action Games</Name>
@@ -1418,6 +1773,54 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Games</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Graphics menu -->
@@ -1440,6 +1843,10 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Vector Graphics</Name>
@@ -1598,6 +2005,54 @@
 		</Not>
 	    </Exclude>
     	</Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>Adult</Name>
+    	    <Directory>fvwm-adult.directory</Directory>
+    	    <Include>
+            	<Category>Adult</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+    	<Menu>
+    	    <Name>Core</Name>
+    	    <Directory>fvwm-core.directory</Directory>
+    	    <Include>
+            	<Category>Core</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+	    <Include>
+                <Category>ConsoleOnly</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Graphics</Category>
+		</Not>
+	    </Exclude>
+    	</Menu>
     </Menu>
 
     <!-- Multimedia menu -->
@@ -1624,6 +2079,10 @@
 		<Category>Amusement</Category>
 		<Category>Electronics</Category>
 		<Category>Engineering</Category>
+        	<Category>Documentation</Category>
+        	<Category>Adult</Category>
+        	<Category>Core</Category>
+        	<Category>ConsoleOnly</Category>
 	    </Exclude>
     	    <Menu>
 		<Name>HamRadio</Name>
@@ -1769,6 +2228,54 @@
 		    </Not>
 		</Exclude>
     	    </Menu>
+    	    <Menu>
+        	<Name>Documentation</Name>
+        	<Directory>fvwm-documentation.directory</Directory>
+        	<Include>
+            	    <Category>Documentation</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Adult</Name>
+        	<Directory>fvwm-adult.directory</Directory>
+        	<Include>
+            	    <Category>Adult</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Core</Name>
+        	<Directory>fvwm-core.directory</Directory>
+        	<Include>
+            	    <Category>Core</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+            <Menu>
+	        <Name>Console Only</Name>
+    	        <Directory>fvwm-consoleonly.directory</Directory>
+        	<Include>
+            	    <Category>ConsoleOnly</Category>
+        	</Include>
+	        <Exclude>
+		    <Not>
+	    		<Category>Audio</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
 	</Menu>
 	<Menu>
 	    <!-- Video menu -->
@@ -1784,6 +2291,10 @@
 		<Category>Amusement</Category>
     		<Category>Electronics</Category>
 		<Category>Engineering</Category>
+        	<Category>Documentation</Category>
+        	<Category>Adult</Category>
+        	<Category>Core</Category>
+                <Category>ConsoleOnly</Category>
 	    </Exclude>
 	    <Menu>
 		<Name>Audio Video Editing</Name>
@@ -1857,6 +2368,54 @@
 		    </Not>
 		</Exclude>
     	    </Menu>
+    	    <Menu>
+        	<Name>Documentation</Name>
+        	<Directory>fvwm-documentation.directory</Directory>
+        	<Include>
+            	    <Category>Documentation</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Adult</Name>
+        	<Directory>fvwm-adult.directory</Directory>
+        	<Include>
+            	    <Category>Adult</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Core</Name>
+        	<Directory>fvwm-core.directory</Directory>
+        	<Include>
+            	    <Category>Core</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
+            <Menu>
+	        <Name>Console Only</Name>
+    	        <Directory>fvwm-consoleonly.directory</Directory>
+        	<Include>
+            	    <Category>ConsoleOnly</Category>
+        	</Include>
+	        <Exclude>
+		    <Not>
+	    		<Category>Video</Category>
+		    </Not>
+		</Exclude>
+    	    </Menu>
 	</Menu>
 	<Menu>
 	    <!-- AudioVideo menu -->
@@ -1882,6 +2441,10 @@
 		<Category>Amusement</Category>
 		<Category>Electronics</Category>
 		<Category>Engineering</Category>
+        	<Category>Documentation</Category>
+        	<Category>Adult</Category>
+        	<Category>Core</Category>
+                <Category>ConsoleOnly</Category>
 	    </Exclude>
 	    <Menu>
 		<Name>Database</Name>
@@ -2035,6 +2598,62 @@
 		    <Category>Video</Category>
 		</Exclude>
     	    </Menu>
+    	    <Menu>
+        	<Name>Documentation</Name>
+        	<Directory>fvwm-documentation.directory</Directory>
+        	<Include>
+            	    <Category>Documentation</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+	        </Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Adult</Name>
+        	<Directory>fvwm-adult.directory</Directory>
+        	<Include>
+            	    <Category>Adult</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+    	    </Menu>
+    	    <Menu>
+        	<Name>Core</Name>
+        	<Directory>fvwm-core.directory</Directory>
+        	<Include>
+            	    <Category>Core</Category>
+        	</Include>
+		<Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+    	    </Menu>
+            <Menu>
+	        <Name>Console Only</Name>
+    	        <Directory>fvwm-consoleonly.directory</Directory>
+        	<Include>
+            	    <Category>ConsoleOnly</Category>
+        	</Include>
+	        <Exclude>
+		    <Not>
+	    		<Category>AudioVideo</Category>
+		    </Not>
+		    <Category>Audio</Category>
+		    <Category>Video</Category>
+		</Exclude>
+    	    </Menu>
 	</Menu>
     </Menu>
 
@@ -2064,6 +2683,11 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Monitor</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
         </Exclude>
     	<Menu>
 	    <Name>Email</Name>
@@ -2221,6 +2845,66 @@
 		</Not>
 	    </Exclude>
         </Menu>
+        <Menu>
+            <Name>Monitor</Name>
+            <Directory>fvwm-monitor.directory</Directory>
+            <Include>
+        	<Category>Monitor</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Adult</Name>
+            <Directory>fvwm-adult.directory</Directory>
+            <Include>
+                <Category>Adult</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Core</Name>
+            <Directory>fvwm-core.directory</Directory>
+            <Include>
+                <Category>Core</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+            <Include>
+                <Category>ConsoleOnly</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Network</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
     </Menu>
 
     <!-- Office menu -->
@@ -2250,6 +2934,10 @@
 	    <Category>Amusement</Category>
 	    <Category>Electronics</Category>
 	    <Category>Engineering</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
 	</Exclude>
 	<Menu>
 	    <Name>Calendar</Name>
@@ -2428,6 +3116,54 @@
 		</Not>
 	    </Exclude>
         </Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Adult</Name>
+            <Directory>fvwm-adult.directory</Directory>
+            <Include>
+                <Category>Adult</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Core</Name>
+            <Directory>fvwm-core.directory</Directory>
+            <Include>
+                <Category>Core</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+            <Include>
+                <Category>ConsoleOnly</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>Office</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
     </Menu>
 
     <!-- System menu -->
@@ -2448,6 +3184,15 @@
 	    <Category>Electronics</Category>
 	    <Category>Emulator</Category>
 	    <Category>Engineering</Category>
+    	    <Category>FileTools</Category>
+	    <Category>TerminalEmulator</Category>
+    	    <Category>FileSystem</Category>
+    	    <Category>Monitor</Category>
+            <Category>Security</Category>
+            <Category>Documentation</Category>
+            <Category>Adult</Category>
+            <Category>Core</Category>
+            <Category>ConsoleOnly</Category>
         </Exclude>
         <Menu>
             <Name>Amusement</Name>
@@ -2490,6 +3235,122 @@
             <Directory>fvwm-engineering.directory</Directory>
             <Include>
                 <Category>Engineering</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+    	<Menu>
+    	    <Name>File Tools</Name>
+    	    <Directory>fvwm-filetools.directory</Directory>
+    	    <Include>
+        	<Category>FileTools</Category>
+    	    </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+        	<Category>FileManager</Category>
+	    </Exclude>
+    	    <Menu>
+        	<Name>File Manager</Name>
+        	<Directory>fvwm-filemanager.directory</Directory>
+        	<Include>
+            	    <Category>FileManager</Category>
+        	</Include>
+    	    </Menu>
+    	</Menu>
+        <Menu>
+            <Name>Terminal Emulator</Name>
+            <Directory>fvwm-terminalemulator.directory</Directory>
+            <Include>
+                <Category>TerminalEmulator</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>File System</Name>
+            <Directory>fvwm-filesystem.directory</Directory>
+            <Include>
+                <Category>FileSystem</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Monitor</Name>
+            <Directory>fvwm-monitor.directory</Directory>
+            <Include>
+                <Category>Monitor</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Security</Name>
+            <Directory>fvwm-security.directory</Directory>
+            <Include>
+                <Category>Security</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Documentation</Name>
+            <Directory>fvwm-documentation.directory</Directory>
+            <Include>
+                <Category>Documentation</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Adult</Name>
+            <Directory>fvwm-adult.directory</Directory>
+            <Include>
+                <Category>Adult</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Core</Name>
+            <Directory>fvwm-core.directory</Directory>
+            <Include>
+                <Category>Core</Category>
+            </Include>
+	    <Exclude>
+		<Not>
+	    	    <Category>System</Category>
+		</Not>
+	    </Exclude>
+        </Menu>
+        <Menu>
+            <Name>Console Only</Name>
+            <Directory>fvwm-consoleonly.directory</Directory>
+            <Include>
+                <Category>ConsoleOnly</Category>
             </Include>
 	    <Exclude>
 		<Not>
