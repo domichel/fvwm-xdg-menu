@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=FVWM_Xdg
 Comment=FVWM Xdg Icon Theme
-Inherits=Tango,gnome,crystalsvg
+Inherits=Tango,gnome
 Example=application-games.png
 
 # KDE Specific Stuff
