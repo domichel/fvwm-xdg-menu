@@ -24,6 +24,8 @@ AddToMenu FvwmMenu
 	--desktop fvwm \
 	--menu-type applications \
 	--enable-mini-icons \
+	--theme FVWM_Xdg \
+	--size 24 \
 	--mini-icon-dir $[FVWM_USERDIR]/icons/fvwm-desktop'
 
 and assign a binding:
@@ -68,7 +70,9 @@ DONE:
 
 TODO:
 -----
-Find some nice artwork icons for all the categories and incorporate them into the menu.
+Find some more artwork icons for all the categories and incorporate them into the menu.
+For now, the icons in the FVWM_Xdg theme are coming from the Tangp project and from the Ken Lester's icon theme.
+It inherit the Tango and gnome icon themes.
 
 
 NOTE:
