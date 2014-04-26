@@ -1698,7 +1698,7 @@
     	    </Include>
 	</Menu>
 	<Menu>
-	    <Name>Shooters</Name>
+	    <Name>Shooter</Name>
 	    <Directory>fvwm-shooter.directory</Directory>
     	    <Include>
     	        <Category>Shooter</Category>
