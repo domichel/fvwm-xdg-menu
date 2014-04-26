@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Directory
-Icon=applications-system
+Icon=utilities-terminal
 Name=Terminal Emulator
 Name[en_GB]=Terminal Emulator
 Name[fr]=Émulateur de terminal

@@ -21,15 +21,15 @@ Example=application-games.png
 #PanelSizes=16,22,32,48,64,72,96,128
 
 # Directory list
-Directories=24x24/categories,32x32/categories,16x16/categories
-
-[24x24/categories]
-Size=24
-Type=Fixed
+Directories=32x32/categories,24x24/categories,16x16/categories
 
 [32x32/categories]
 Size=32
 #Context=Categories
+Type=Fixed
+
+[24x24/categories]
+Size=24
 Type=Fixed
 
 [16x16/categories]
