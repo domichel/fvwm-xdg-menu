@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Directory
-Icon=audio-x-generic
+Icon=jack_mixer
 Name=Mixer
 Name[en_GB]=Mixer
 Name[fr]=Mixage

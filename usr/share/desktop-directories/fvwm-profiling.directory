@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Directory
-Icon=applications-development
+Icon=package_development_profiling
 Name=Profiling
 Name[en_GB]=Profiling
 Name[fr]=Profilage

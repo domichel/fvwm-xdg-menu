@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Directory
-Icon=applications-graphics
+Icon=package_ocr
 Name=OCR
 Name[en_GB]=OCR
 Name[fr]=Reconnaissance optique de caractères

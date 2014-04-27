@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Directory
-Icon=applications-system
+Icon=package_filesystem
 Name=File System
 Name[en_GB]=File System
 Name[fr]=Système de fichiers
