@@ -81,7 +81,7 @@ kbuildsycoca4 running forever at 100 % cpu.
 I tested this menu with different dekstops. It didn't try gnome as my system is *kit free, which is incompatible with gnome.
 That menu was working fine in all desktops I try but kde. With a standard installation of that menu, it should be no issue
 at all with kde, but if you try to copy or symlink /etc/xdg/menus/fvwm-applications to 
-~/.config/menus/applications/merged/fvwm-applications, it work with xfce, but fail with kde: kbuildsycoca4 will
+~/.config/menus/applications-merged/fvwm-applications, it work with xfce, but fail with kde: kbuildsycoca4 will
 run forewer and that will even confuse the kde applications when kde is not installed.
 
 
