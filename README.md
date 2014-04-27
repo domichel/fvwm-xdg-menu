@@ -30,7 +30,7 @@ To incorporate the application menu into fvwm, just put something like the follo
 
 and assign a binding:
 
-Key M A 4 Menu Fvwm-Menu
+    Key M A 4 Menu Fvwm-Menu
 
 Alt+M will launch the menu. Be patient at the first invocation.
 Read 'man fvwm-menu-desktop' for other possibilities.
