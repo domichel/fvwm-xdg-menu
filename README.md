@@ -68,8 +68,12 @@ DONE:
 
 - The icon theme. One icon is my own work, the other are collected from different free icon themes. No one single
   theme is complete toward the additional categories, and I am not a graphical artist.
-  The icons in the FVWM_Xdg theme are coming mostly from the Tangp project, from the hicolor theme and from
-  the Ken Lester's icon theme. It also inherit the Tango and gnome icon themes.
+  The icons in the FVWM_Xdg theme are coming mostly from the Tango project, from the hicolor theme and from
+  the Ken Lester's icon theme ( http://www.five-star.com/icons-htm ). It also inherit the Tango and gnome icon themes.
+
+  Ken Lester's original icons are dual png icons (2 pictures icons). It was not possible to implement the 2 pictures of them due to a
+  lack of support of that pixmap format in GNU/Linux. However, if you want to see some of them with their 2 pictures, a good
+  alternative to the Amiga OS is to install fvwm-crystal ( http://fvwm-crystal.sourceforge.net ).
 
 
 NOTE:
