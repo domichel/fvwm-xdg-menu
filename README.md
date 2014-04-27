@@ -73,7 +73,8 @@ DONE:
 
   Ken Lester's original icons are dual png icons (2 pictures icons). It was not possible to implement the 2 pictures of them due to a
   lack of support of that pixmap format in GNU/Linux. However, if you want to see some of them with their 2 pictures, a good
-  alternative to the Amiga OS is to install fvwm-crystal ( http://fvwm-crystal.sourceforge.net ).
+  alternative to the Amiga OS is to install fvwm-crystal ( http://fvwm-crystal.sourceforge.net ), which have its own
+  application menu system with full support for the additional freedesktop categories.
 
 
 NOTE:
