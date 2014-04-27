@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Directory
-Icon=gnome-globe
+Icon=package_internet_dialup
 Name=Dialup
 Name[en_GB]=Dialup
 Name[fr]=Dialup

@@ -62,17 +62,14 @@ DONE:
  - The main skeleton of the menu with all the additional categories.
    KDE, GNOME, XFCE, GTK, QT, Java and Motif are not implemented. These categories
    give unecessary complicated menus and they are all for GUI applications which
-   have other categories. It is also the ConsoleOnly category for the console
-   only applications! Like it or not, that's my choice.
+   have other categories.
    
    See http://standards.freedesktop.org/menu-spec/latest/apas02.html for the specification.
 
-
-TODO:
------
-Find some more artwork icons for all the categories and incorporate them into the menu.
-For now, the icons in the FVWM_Xdg theme are coming from the Tangp project and from the Ken Lester's icon theme.
-It inherit the Tango and gnome icon themes.
+- The icon theme. One icon is my own work, the other are collected from different free icon themes. No one single
+  theme is complete toward the additional categories, and I am not a graphical artist.
+  The icons in the FVWM_Xdg theme are coming mostly from the Tangp project, from the hicolor theme and from
+  the Ken Lester's icon theme. It also inherit the Tango and gnome icon themes.
 
 
 NOTE:
@@ -80,6 +77,12 @@ NOTE:
 Don't make a symlink from fvwm-applications.menu to applications.menu
 in /etc/xdg/menus. This doesn't arm fvwm, but can make silly bugs like
 kbuildsycoca4 running forever at 100 % cpu.
+
+I tested this menu with different dekstops. It didn't try gnome as my system is *kit free, which is incompatible with gnome.
+That menu was working fine in all desktops I try but kde. With a standard installation of that menu, it should be no issue
+at all with kde, but if you try to copy or symlink /etc/xdg/menus/fvwm-applications to 
+~/.config/menus/applications/merged/fvwm-applications, it work with xfce, but fail with kde: kbuildsycoca4 will
+run forewer and that will even confuse the kde applications when kde is not installed.
 
 
 CONTRIBUTE:
@@ -90,7 +93,7 @@ https://github.com/domichel/fvwm-xdg-menu
 Currently, only the English and French translations are implemented. Please considere to contribute
 new translations. It is just to add them in the files in /usr/share/desktop-directories.
 
-Artwork contributions for the icons will be very welcome too.
+Artwork contributions in order to get a more consistent icon theme will be very welcome too.
 
 
 Enjoy,
