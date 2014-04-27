@@ -18,9 +18,9 @@ FVWM:
 -----
 To incorporate the application menu into fvwm, just put something like the following into your configuration:
 
-DestroyMenu FvwmMenu
-AddToMenu FvwmMenu
-+ DynamicPopupAction Piperead 'fvwm-menu-desktop \
+    DestroyMenu FvwmMenu
+    AddToMenu FvwmMenu
+    + DynamicPopupAction Piperead 'fvwm-menu-desktop \
 	--desktop fvwm \
 	--menu-type applications \
 	--enable-mini-icons \
